@@ -1,0 +1,16 @@
+name: desktop_listview
+description: A Flutter ListView package providing desktop-like interactions and item selection.
+version: 1.0.0
+repository: https://github.com/siar1234/desktop_listview
+
+environment:
+  sdk: ^3.5.1
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  lints: ^6.0.0
+  test: ^1.25.6
