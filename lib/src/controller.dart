@@ -16,6 +16,11 @@ class DesktopListviewController extends ChangeNotifier {
     notifyListeners();
   }
 
+  void addAll(List<String> idList) {
+    selectedItems.addAll(idList);
+    notifyListeners();
+  }
+
   void startSelection() {
 
   }
@@ -47,10 +52,6 @@ class DesktopListviewController extends ChangeNotifier {
     if (event.physicalKey == PhysicalKeyboardKey.shiftLeft || event.physicalKey == PhysicalKeyboardKey.shiftRight) {
       ctrlPressed = false;
       shiftPressed = true;
-    }
-
-    if (ctrlPressed && event.physicalKey == PhysicalKeyboardKey.keyA) {
-      // selectedItems.addAll(idList);
     }
   }
   
